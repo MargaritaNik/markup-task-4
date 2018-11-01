@@ -1,0 +1,133 @@
+.photo
+{
+    width: 248px;
+    height: 155px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.photo:hover img
+{
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+.block
+{
+    display: inline-block;
+    width: 248px;
+    height: 330px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.information
+{
+    display: none;
+}
+
+.block:hover
+{
+    box-shadow: 14px 14px 28px rgba(0,0,0,.25), 10px 10px 10px rgba(0,0,0,.22);
+}
+
+.wrapper 
+{
+    padding: 10px;
+}
+
+body
+{
+    background: #ffedd5;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 .7em;
+    display: block;
+}
+
+a,
+a:visited
+{
+    color: black;
+}
+
+a:hover
+{
+    color: #24488f;
+}
+
+p
+{
+    margin: 0;
+}
+
+p.status
+{
+    margin: 1em 0;
+}
+
+header
+{
+    height: 60px;
+}
+
+.change-view-button
+{
+    width: 30px;
+    height: 30px;
+    background: url('cats/11.png');
+    display: block;
+}
+
+input[name='view']
+{
+    display: none;
+}
+
+input[name='view']:checked ~ .all .change-view-button
+{
+    background: url('cats/12.png');
+}
+
+input[name='view']:checked ~ .all .block
+{
+    display: block;
+    width: 496px;
+    height: 520px;
+    margin: 10px auto;
+    margin-bottom: 60px;
+
+}
+
+input[name='view']:checked ~ .all .block .photo 
+{
+    width: 496px;
+    height: 310px;
+   
+
+}
+
+input[name='view']:checked ~ .all .photo img
+{
+    width: 496px;
+    height: 310px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+}
+
+input[name='view']:checked ~ .all .information
+{
+    display: block;
+}
